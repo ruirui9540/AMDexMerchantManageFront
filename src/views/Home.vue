@@ -79,17 +79,17 @@ export default {
         key = 'oZrzWC7DZhrkHpFVqhtH5gRFcRmBBP10dJOb0NCH';
       }
       
-      let _requestSign = md5(JSON.stringify(params) + key);
-      params.requestSign = _requestSign;
-      this.$axios.post('/trade/recharge/prepareRechargeTrade',params).then(res=>{
-        let respBen = res.data;
-        if(respBen.status == 0) {
-          this.$router.push('/payment?thirdMerchantId='+respBen.data.thirdMerchantId+'&thirdTradeNo='+respBen.data.thirdTradeNo)
-        }else {
-          this.$Message.warning(respBen.message)
-        }
-      })
-      
+      // let _requestSign = md5(JSON.stringify(params) + key);
+      // params.requestSign = _requestSign;
+      // this.$axios.post('/trade/recharge/prepareRechargeTrade',params).then(res=>{
+      //   let respBen = res.data;
+      //   if(respBen.status == 0) {
+      //     this.$router.push('/payment?thirdMerchantId='+respBen.data.thirdMerchantId+'&thirdTradeNo='+respBen.data.thirdTradeNo)
+      //   }else {
+      //     this.$Message.warning(respBen.message)
+      //   }
+      // })
+      this.$router.push('/success')
       
     }
   },

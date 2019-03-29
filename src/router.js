@@ -19,15 +19,15 @@ export default new Router({
       name: 'payment',
       component: (resolve) => require(['@/views/payment.vue'],resolve)
     },
-    // {
-    //   path: '/wait',
-    //   name: 'wait',
-    //   component: (resolve) => require(['@/views/wait.vue'],resolve)
-    // },
-    // {
-    //   path: '/success',
-    //   name: 'success',
-    //   component: (resolve) => require(['@/views/success.vue'],resolve)
-    // }
+     {
+       path: '/wait',
+       name: 'wait',
+       component: (resolve) => require(['@/views/wait.vue'],resolve)
+     },
+     {
+       path: '/success',
+       name: 'success',
+       component: (resolve) => require(['@/views/success.vue'],resolve)
+   }
   ]
 })
