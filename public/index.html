@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>在線充值</title>
+    <script>
+        var iScale = 1;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + iScale + ',minimum-scale=' + iScale + ',maximum-scale=' + iScale + ',user-scalable=no" />');
+        var iWidth = document.documentElement.clientWidth;
+        document.getElementsByTagName('html')[0].style.fontSize = 10 * iWidth / 75 + 'px';
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
+<style>
+html, body {
+    height: 100%;
+}
+body {
+  background-color: #F8F9FB;
+  overflow: initial!important;
+  padding-right: 0px !important;
+}
+* {
+  box-sizing: border-box; 
+  padding: 0;
+  margin: 0;
+  font-family: "PingFang SC Regular", Helvetica, 'Avenir',"Microsoft Yahei",Arial, sans-serif;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  font-size: 16px;
+}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img,a{border:0}
+a{color:#555;cursor:pointer;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+div,p,ul,li,ol {color: #273D56;}
+
+input, .canchoose {
+  -webkit-user-select:text !important;
+  -moz-user-select:text !important;
+  -ms-user-select:text !important;
+  user-select:text !important;
+}
+input, button {
+  outline: none;
+  background:inherit;
+}
+ul, ol {
+  list-style: none;
+}
+.icon {
+  display: inline-block;
+}
+
+.clearfix:after {  visibility: hidden;  display: block;  font-size: 0;  content: " ";  clear: both;  height: 0;  }
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.boldFont {
+  font-weight: 600;
+}
+.lightColor {
+  color: rgba(255,255,255,0.80);
+}
+.ellispsis {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
+	  -webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;
+    background-color:transparent;
+    background-image: none;
+    transition: background-color 50000s ease-in-out 0s; /*背景色透明  生效时长  过渡效果  启用时延迟的时间*/
+}
+input {
+	 background-color:transparent;
+}
+</style>

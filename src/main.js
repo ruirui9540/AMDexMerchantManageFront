@@ -1,0 +1,18 @@
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+
+
+import '@/common/constant'; // axios
+import '@/plugins/iview';  //iview
+
+
+Vue.config.productionTip = false
+Vue.prototype.$publicPath = process.env.BASE_URL;
+
+new Vue({
+  router,
+  store,
+  render: h => h(App)
+}).$mount('#app')
